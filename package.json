@@ -1,7 +1,7 @@
 {
   "name": "obj-pool",
-  "version": "0.9.0",
-  "description": "Object pool...",
+  "version": "0.9.1",
+  "description": "ObjPool allow you to recycle or allocate objects in a pool easily.",
   "main": "./build/obj-pool.js",
   "author": "Nazariglez <nazari.nz@gmail.com> (http://www.nazariglez.com)",
   "license": "MIT",
@@ -9,7 +9,9 @@
     "object",
     "pool",
     "pooling",
-    "game"
+    "game",
+    "recycle",
+    "allocate"
   ],
   "homepage": "https://github.com/Nazariglez/obj-pool",
   "repository": {
