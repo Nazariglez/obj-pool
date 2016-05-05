@@ -22,8 +22,7 @@ module.exports = {
 				exclude: path.join(__dirname, 'node_modules'),
 				loader: 'babel-loader',
         query: {
-          presets: ['es2015','stage-0'],
-					plugins: ['add-module-exports']
+          presets: ['es2015','stage-0']
         }
 			}
 		]
