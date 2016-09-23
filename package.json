@@ -1,6 +1,6 @@
 {
   "name": "obj-pool",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ObjPool allow you to recycle or allocate objects in a pool easily.",
   "main": "./build/obj-pool.js",
   "typings": "./index.d.ts",

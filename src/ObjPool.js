@@ -3,6 +3,7 @@ export default class ObjPool{
     this.ctor = ctor;
     this._objects = [];
     this.args = options.args || [];
+    this._amount = options.amount || 1;
 
     this.objInit = "init";
     this.objReset = "reset";
@@ -25,7 +26,10 @@ export default class ObjPool{
   }
 
   alloc(){
-    let obj = this._objects.length ? this._objects.pop() : this._createObj();
+    if(this._objects.length === 0){
+      this.generate(this._amount);
+    }
+    let obj = this._objects.pop();
     if(obj[this.objInit])obj[this.objInit]();
     return obj;
   }
